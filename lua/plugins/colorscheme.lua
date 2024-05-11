@@ -3,7 +3,7 @@ return {
     "rose-pine/neovim",
     lazy = true,
     priority = 10000,
-    opts = function()
+    config = function()
       return {
         variant = "dawn",
         styles = {
