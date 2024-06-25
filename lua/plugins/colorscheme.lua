@@ -1,23 +1,24 @@
 return {
   {
     "rose-pine/neovim",
+    name = "rose-pine",
     lazy = true,
-    priority = 10000,
-    config = function()
-      return {
-        variant = "dawn",
-        styles = {
-          transparency = true,
-        },
-      }
-    end,
+    priority = 1000,
+    opts = {
+      variant = "main",
+      styles = { transparency = true },
+    },
   },
   {
-    "rebelot/kanagawa.nvim",
-    opts = function()
-      return {
-        transparent = true,
-      }
-    end,
+    "ellisonleao/gruvbox.nvim",
+    opts = {
+      transparent_mode = true,
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "rose-pine",
+    },
   },
 }
