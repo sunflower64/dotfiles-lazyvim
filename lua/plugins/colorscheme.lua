@@ -10,6 +10,15 @@ return {
     },
   },
   {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    lazy = true,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
+  {
     "ellisonleao/gruvbox.nvim",
     opts = {
       transparent_mode = true,
@@ -18,7 +27,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "kanagawa",
     },
   },
 }
